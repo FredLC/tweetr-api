@@ -135,7 +135,7 @@ class UserController {
         data: user
       });
     } catch (error) {
-      response.status(400).json({
+      response.status(404).json({
         status: "error",
         message: "User not found"
       });
